@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Peppermint (because Tic Tac Mint already exists)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form id="size">
+            <div class="sizewidthdiv">
+                <label for="width">Width:</label>
+                <input type="number" id="width" value="3"> <br>
+            </div>
+            
+            <div class="sizewidthdiv">
+                <label for="height">Height:</label>
+                <input type="number" id="height" value="3">
+            </div>
+    
+            <input type="submit" value="Play" id="playbtn">
+        </form>
+    
+        <div id="game">
+            <h2 id="playingHeader">Currently Playing: <span id="playing">X</span></h2>
+            <canvas id="canvas"></canvas>
+            <div id="gamehorizontal">
+                <input type="button" value="Restart" id="restartbtn">
+                <input type="button" value="Back" id="backbtn">
+            </div>
+        </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
