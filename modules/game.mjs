@@ -18,9 +18,9 @@ export function game(canvas, currentlyPlayingSpan, size) {
     let canvasRect = canvas.getBoundingClientRect();
     let currentPlayer = CELL_TYPE.X
 
-    for (let x = 0; x < size.width / (CELL_SIZE + 1); x++) {
+    for (let x = 0; x < size.width; x++) {
         field.push([]);
-        for (let y = 0; y < size.height / (CELL_SIZE + 1); y++) {
+        for (let y = 0; y < size.height; y++) {
             field[x].push(CELL_TYPE.EMPTY);
         }
     }
